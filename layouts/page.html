@@ -1,0 +1,32 @@
+{{ define "main" }}
+  {{- /* Sub-pages are pages whose URL extends this one (e.g. /research/talks/ under /research/) */}}
+  {{- $me := .RelPermalink }}
+  {{- $children := slice }}
+  {{- $parent := false }}
+  {{- if eq .Section "pages" }}
+    {{- range (where site.RegularPages "Section" "pages").ByWeight }}
+      {{- if and (ne .RelPermalink $me) (strings.HasPrefix .RelPermalink $me) }}{{ $children = $children | append . }}{{ end }}
+      {{- if and (ne .RelPermalink $me) (strings.HasPrefix $me .RelPermalink) }}{{ $parent = . }}{{ end }}
+    {{- end }}
+  {{- end }}
+  <article{{ if .Params.french }} lang="fr"{{ end }}>
+    <header class="title-block">
+      {{ with $parent }}<p class="crumb"><a href="{{ .RelPermalink }}">{{ .Title }}</a> /</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ if eq .Section "posts" }}{{ partial "date.html" . }}{{ end }}
+      {{ with $children }}
+      <nav class="subpages">
+        {{ range . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+      </nav>
+      {{ end }}
+    </header>
+    <div class="content">{{ .Content }}</div>
+  </article>
+  {{ if eq .Section "posts" }}
+  <nav class="pager">
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+    <span></span>
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+  </nav>
+  {{ end }}
+{{ end }}

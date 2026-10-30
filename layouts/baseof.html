@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | truncate 160 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ with site.Home.OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">{{ end }}
+  <link rel="preload" href="/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+  {{/* KaTeX CSS must match the KaTeX version bundled in Hugo (Hugo 0.168 -> KaTeX 0.18.4) */}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.css" crossorigin="anonymous">
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+      <p class="site-tagline">{{ site.Params.description }}</p>
+      <nav>
+        {{ $current := . }}
+        {{ range site.Menus.main }}
+          <a href="{{ .URL }}"{{ if or ($current.IsMenuCurrent "main" .) (and (eq .URL "/") (or $current.IsHome (eq $current.Section "posts"))) (and (ne .URL "/") (strings.HasPrefix $current.RelPermalink .URL)) }} class="active"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer wrap">
+    <p>© {{ now.Year }} {{ site.Params.author }} · <a href="{{ "archives/" | relURL }}">Archives</a> · <a href="{{ "index.xml" | relURL }}">RSS</a></p>
+  </footer>
+</body>
+</html>

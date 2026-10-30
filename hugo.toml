@@ -1,0 +1,45 @@
+baseURL = "https://atilloy.com/"
+locale = "en"
+title = "Antoine Tilloy’s research log"
+timeZone = "Europe/Paris"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  author = "Antoine Tilloy"
+  description = "orthodox and unorthodox explorations of Quantum Theory"
+
+# Same URLs as the old WordPress site
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[pagination]
+  pagerSize = 10
+
+[menus]
+  [[menus.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+# RSS at /index.xml and at /feed/ (the old WordPress feed address)
+[outputFormats.feed]
+  mediaType = "application/rss+xml"
+  baseName = "index"
+  path = "feed"
+  isPlainText = false
+  rel = "alternate"
+[outputs]
+  home = ["html", "rss", "feed"]
+  section = ["html"]
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in Markdown
+[markup.goldmark.extensions.passthrough]
+  enable = true
+  [markup.goldmark.extensions.passthrough.delimiters]
+    # only dollar delimiters: \[...\] would swallow escaped brackets like \[preprint\]
+    block = [["$$", "$$"]]
+    inline = [["$", "$"]]
+[markup.goldmark.extensions.typographer]
+  disable = false

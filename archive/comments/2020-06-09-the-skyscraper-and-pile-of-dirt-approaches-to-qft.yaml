@@ -1,0 +1,20 @@
+post: The skyscraper and pile of dirt approaches to QFT
+url: /2020/06/09/the-skyscraper-and-pile-of-dirt-approaches-to-qft/
+comments:
+- id: 509
+  parent: 0
+  author: Howard Wiseman
+  author_url: null
+  date: '2020-06-09 20:52:10'
+  content: "Very nice. Two questions.  \n1. \"You only live once fashion\" ??  \n2. What about quantum computers?\n"
+- id: 510
+  parent: 509
+  author: Antoine Tilloy
+  author_url: http://tilloy.wordpress.com
+  date: '2020-06-10 08:32:03'
+  content: 'For the yolo fashion, I just meant like "every term diverges, the series diverge, but who cares, you only live once, let''s take the risk". I meant Yolo as an invitation to carelessness. If you only live once, why should you care about ill defined steps in computations?
+
+
+    Quantum computers are another interesting route. I know less about the perspectives for lattice gauge theories, that''s why I didn''t mention it, but I know it is quite an active subject (if only at MPQ). As far as I understand, at the end of the day, you will still be sampling observables, and thus at least for simple simulators, I imagine the errors are still decreasing with the square root of the time you put in. So their main use will likely not to be to get 10^{-10} precision on masses (as far as I understand...). But I glossed over an important limitation of Monte Carlo so far: it is difficult to access real time evolution and some parameter regimes (typically with strong chemical potential) are inaccessible because of the sign problem. This is where you expect that quantum computers or alternative classical methods (tensor networks, RHT, ...) could do much better than Monte-Carlo. Most papers usually mention this point in the introduction as the main advantage against Monte-Carlo.
+
+    '

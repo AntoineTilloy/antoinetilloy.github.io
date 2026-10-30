@@ -1,0 +1,50 @@
+post: Quantum theory in India
+url: /2016/11/21/quantum-theory-in-india/
+comments:
+- id: 7
+  parent: 0
+  author: Antoine
+  author_url: http://bobdemaths.wordpress.com
+  date: '2016-11-25 13:06:37'
+  content: "D'après les photos le site semble relativement désert dans les deux sens du terme, mais effectivement ça a l'air lumineux et agréable pour travailler. Et si j'en crois les vues aériennes, la verdure semble être un privilège réservé à la proximité des rivières, donc il n'y aura peut-être pas beaucoup plus d'arbres que maintenant (je ne distingue pas sur la photo si les petites pousses chétives sont en fait des embryons d'arbres).  \nBonne conf, et raconte !\n"
+- id: 8
+  parent: 0
+  author: Antoine Tilloy
+  author_url: http://tilloy.wordpress.com
+  date: '2016-11-26 05:27:28'
+  content: 'Les photos accentuent peut-être un peu le côté "désert" car elles ont été prises tôt le matin mais la météo est très agréable à cette période de l''année : il fait bon et sec et les nuits sont relativement fraîches. Je pense que le campus sera assez rapidement couvert de vert car les pousses chétives sont en effet de petits arbustes. Les alentours immédiats sont secs mais à 5 kilomètres environ c''est déjà la jungle (j''en ai atteint la lisière en courant mais la nuit tombait et j''ai été contraint de rentrer). Quand bien même on serait au milieu du Sahara, je suis à peu près sûr qu''ils arriveraient à tout couvrir d''arbres. L''énergie et l''argent investis dans l''institut sont assez impressionnants quand on voit la relative pauvreté des villages alentours. Ce sentiment est accentué par le fait que l''institut est aussi coupé du reste: il y a de gros générateurs électriques dans l''institut et des réservoir et chaines de tuyaux dont je devine qu''il servent stocker et retraiter
+    l''eau. Et une armée de gens s''active dans les jardins pour les rendre plus présentables.
+
+
+    Sur le fond, je n''ai pas encore grand chose à débriefer dans la mesure où je connais déjà une grande partie de ce qui est présenté. Les nouveautés sont la théorie de la "quantum measure" Raphael Sorkin et la "trace dynamics" présentée par Tejinder Singh (initialement introduite par Steven Adler et ses collaborateurs). Dans le premier cas, c''est une sorte d''extension de ce qu''on avait présenté en TD de mécanique quantique avec les interférences d''ordre supérieur. J''avoue que je suis assez sceptique. Il ne me semble pas tout à fait évident que la théorie soit cohérente. On trouve des corrections aux expériences interférométriques, c''est rigolo, mais à tout les coups ça détruit complètement le spectre de l''atome d''hydrogène ou permet d''envoyer de l''information plus vite que la lumière avec des paires intriquées. Les systèmes considérés sont tellement simples et le formalisme tellement embryonnaire qu''il est difficile de savoir. Pour la "trace dynamics" ça semble intéressant
+    mais c''est nettement plus difficile et le cours est allé assez vite. C''est une théorie Hamiltonienne classique (déterministe) sur des champs de matrices à coefficients grassmaniens (le truc vachement intuitif...). L''idée est que quand on moyenne toutes les quantités sur l''ensemble canonique (le microcanonique doit marcher pareil), on retrouve les relations de commutation quantiques. Mieux (en théorie), en ajoutant les fluctuations, on ajoute une non-linéarité qui détruit les superpositions macroscopiques et résout le problème de la mesure. Je suis pour le moment incapable de vérifier ces affirmations moi même car j''ai à peine compris les définitions de base. Intuitivement, je vois mal comment une théorie classique donnée par un Lagrangien scalaire local, même si les champs sont à valeur dans un espace pourri, peut donner une théorie quantique non-locale (signe que j''ai probablement mal compris le schéma général). Je pense qu''il faudra que j''étudie directement le bouquin d''Adler.
+
+
+    PS: Tu devrais ajouter ton nom à ton pseudo wordpress, d''aucuns pourraient penser que je m''écris à moi même.
+
+    '
+- id: 11
+  parent: 0
+  author: Antoine
+  author_url: http://bobdemaths.wordpress.com
+  date: '2016-11-28 18:08:26'
+  content: 'Oui tu as raison, il faudrait que je change mon pseudo !
+
+
+    Merci pour les explications, même si tout cela baigne dans un flou assez artistique pour moi, mais au moins tu m''as fait rire avec "le truc vachement intuitif" :) Plus sérieusement, pour le néophyte que je suis, ces explications basiques permettent déjà de m''orienter dans la jungle des propositions, et la prochaine fois que j''entendrai parler de trace dynamics, je connaîtrai au moins déjà quelques bits d''information.
+
+
+    Quant à la jungle (la vraie !), j''aimerais quand même bien savoir où elle se trouve parce que sur les vues aériennes, dans un rayon de 100km, ça ne me semble pas évident :)
+
+
+    Amuse-toi bien !
+
+    '
+- id: 12
+  parent: 0
+  author: Antoine Tilloy
+  author_url: http://tilloy.wordpress.com
+  date: '2016-11-29 05:10:01'
+  content: 'C''est de la jungle au sens faible, "local" : il y a un petit patch à côté du lac (asséché) Hesaraghatta.
+
+    '

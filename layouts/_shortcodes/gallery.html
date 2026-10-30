@@ -1,0 +1,6 @@
+{{- /* Usage: {{< gallery >}} one image path per line {{< /gallery >}} */ -}}
+<div class="gallery">
+{{- range split (trim .Inner "\n ") "\n" }}{{ with trim . " " }}
+  <a href="{{ . }}"><img src="{{ . }}" alt="" loading="lazy"></a>
+{{- end }}{{ end }}
+</div>

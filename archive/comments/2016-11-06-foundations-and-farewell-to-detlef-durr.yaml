@@ -1,0 +1,43 @@
+post: Foundations and farewell to Detlef Dürr
+url: /2016/11/06/foundations-and-farewell-to-detlef-durr/
+comments:
+- id: 1
+  parent: 0
+  author: Antoine
+  author_url: http://bobdemaths.wordpress.com
+  date: '2016-11-07 10:21:12'
+  content: 'I am glad to inaugurate the comment section of this blog, to which I also would like to subscribe, but I couldn''t find any RSS link!
+
+
+    My comments are probably of the zeroth order, as you know my only familiarity with the subjects discussed here come from our discussions where I''m afraid I was really stubbornly dumb.
+
+
+    In the paragraph about Ward Struyve, "Quantum gravity" means non-relativistic gravity, if I understand correctly, and so it would be clearer to say that we have one space (3d) evolving dynamically (this evolution then produces one spacetime, right, but IMO the generally accepted terminology is to talk about objects at fixed time, eg. one talks about a particle evolving in time, and not about a world-line evolvong in time). Then when you say that space-time is "as boring as in classical GR", can''t there be much more allowed spaces because Lorentz invariance would not be automatically there?
+
+
+    I find the discussion about electrodynamics, and in particular the fact that it can not be well-defined, while more general (I guess this means non abelian) Yang-Mills can is very interesting. But then what about a Yang-Mills theory with a Higgs mechanism, that would give QED in the infrared? Is it possible that heavy additional fields make QED well-defined?
+
+
+    Thanks for the very nice account of the conference!
+
+    '
+- id: 2
+  parent: 0
+  author: Antoine Tilloy
+  author_url: http://tilloy.wordpress.com
+  date: '2016-11-07 10:56:29'
+  content: 'Hi Antoine,
+
+
+    On the Quantum Gravity front, Ward was studying simple FLRW spacetimes but to my understanding the analysis would extend (in principle) to the general case. As the quantization is done in the Hamiltonian picture, the main object you consider is the 3-metric but it does not mean that Lorentz invariance is broken (again in principle, this is just a rewriting in the ADM picture). I am not entirely sure how the problem of foliations, which is inherent to dBB, is dealt with in that case: this may indeed produce weirder space-times. However, and contrary to what I''ve been doing with collapse models (maybe you''re referring to our discussions on this), Ward''s results are not confined at all to the Newtonian limit.
+
+
+    By "as boring as GR", I just mean that you have only one space-time metric. You don''t have complex Schrödinger cat states of metric + matter which makes interpreting the theory difficult. This means that even if weirder space-time emerge, at least there is just one geometry. This is boring in a positive sense, it is straightforwardly intelligible.
+
+
+    As for QED, I think you''re aligned with Jürg. I''m clearly not an expert on the subject, you clearly know much more and I think what you suggest is what some of the participants had in mind. The issue with this program is of course that even non-abelian Gauge theories are still not mathematically well defined. If there is a way to build something that behaves like QED without the Landau pole with only a small change in, say, the classical Maxwell equations, then maybe it is worth studying before going to complicated theories. I think both views make sense and roughly correspond to different communities (physicists for the first option, mathematicians for the second).
+
+
+    By the way, I''ve now added a RSS link and social network sharing buttons...
+
+    '

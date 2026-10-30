@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <header class="title-block"><h1>{{ .Title }}</h1></header>
+  {{ range .Pages.GroupByDate "2006" }}
+    <h2 class="toc-year">{{ .Key }}</h2>
+    <ul class="archive">
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}"{{ if .Params.french }} lang="fr"{{ end }}>{{ .Title }}</a><span class="leader"></span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

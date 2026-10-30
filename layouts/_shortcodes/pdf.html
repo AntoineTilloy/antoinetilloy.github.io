@@ -1,0 +1,8 @@
+{{- /* Usage: {{< pdf src="/path/file.pdf" title="My notes" embed=true >}} */ -}}
+{{- $src := .Get "src" }}
+<div class="pdf">
+  {{- if eq (.Get "embed") true }}
+  <object data="{{ $src }}" type="application/pdf"></object>
+  {{- end }}
+  <p><a href="{{ $src }}">📄 {{ .Get "title" | default (path.Base $src) }}</a> (PDF)</p>
+</div>

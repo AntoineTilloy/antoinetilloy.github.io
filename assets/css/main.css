@@ -1,0 +1,112 @@
+/* LaTeX-article look: Latin Modern (Computer Modern) text, paper-white page. */
+
+@font-face { font-family: "Latin Modern"; src: url("/fonts/LM-regular.woff2") format("woff2"); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: "Latin Modern"; src: url("/fonts/LM-italic.woff2") format("woff2"); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: "Latin Modern"; src: url("/fonts/LM-bold.woff2") format("woff2"); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: "Latin Modern"; src: url("/fonts/LM-bold-italic.woff2") format("woff2"); font-weight: bold; font-style: italic; font-display: swap; }
+
+:root {
+  --paper: #fffffc;
+  --ink: #111;
+  --muted: #555;
+  --link: #1a3a8a;
+  --rule: #c8c8c0;
+  --code-bg: #f4f3ee;
+  --text: "Latin Modern", "Latin Modern Roman", "Computer Modern Serif", "CMU Serif", Georgia, serif;
+  --mono: "Latin Modern Mono", "CMU Typewriter Text", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1.125rem/1.4 var(--text);
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+.wrap { max-width: 42rem; margin: 0 auto; padding: 0 1rem; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.caps { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; }
+
+/* Header, like \maketitle */
+.site-header { text-align: center; padding: 2.8rem 0 0; }
+.site-title { font-size: 2rem; font-weight: normal; color: var(--ink); line-height: 1.2; }
+.site-title:hover { text-decoration: none; }
+.site-tagline { margin: 0.4rem 0 1.4rem; font-style: italic; }
+.site-header nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1.6rem; padding: 0.6rem 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.site-header nav a { color: var(--ink); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78rem; }
+.site-header nav a.active { color: var(--link); }
+main.wrap { margin-top: 2.8rem; }
+
+/* Text */
+.content p, .content li { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+.content p { margin: 0 0 0.9em; }
+@media (max-width: 34rem) {
+  /* narrow columns justify badly: ragged right on phones */
+  body { font-size: 1.05rem; line-height: 1.45; }
+  .content p, .content li { text-align: left; }
+}
+h1, h2, h3, h4 { font-weight: bold; line-height: 1.25; }
+.content h2 { font-size: 1.35rem; margin: 2.2rem 0 0.8rem; }
+.content h3 { font-size: 1.15rem; margin: 1.8rem 0 0.6rem; }
+.content h4 { font-size: 1rem; margin: 1.5rem 0 0.5rem; }
+.content ul, .content ol { padding-left: 1.6em; }
+.content li { margin: 0.25em 0; }
+blockquote { margin: 1.2rem 2.2rem; font-size: 0.95em; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 20%; }
+code, pre { font-family: var(--mono); font-size: 0.9em; }
+pre { background: var(--code-bg); padding: 0.8rem 1rem; overflow-x: auto; }
+table { border-collapse: collapse; margin: 1.5rem auto; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); }
+th { border-bottom: 1px solid var(--ink); }
+th, td { padding: 0.25rem 0.8rem; text-align: left; }
+
+/* Post title block */
+.title-block { text-align: center; margin-bottom: 2.4rem; }
+.title-block h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
+.meta { font-style: italic; color: var(--muted); margin: 0; }
+.crumb { margin: 0 0 0.3rem; font-style: italic; }
+.subpages { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1.6rem; margin-top: 0.8rem; }
+.subpages a { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78rem; }
+
+/* Home list */
+.post-summary { margin-bottom: 2.8rem; }
+.post-summary h2 { font-size: 1.35rem; margin: 0 0 0.15rem; }
+.post-summary h2 a { color: var(--ink); }
+.post-summary .meta { margin-bottom: 0.9rem; }
+.more { font-style: italic; }
+
+/* Figures, like \begin{figure}\centering ... \caption */
+.content img, .content video { max-width: 100%; height: auto; }
+figure { margin: 1.8rem auto; text-align: center; }
+figure.right { float: right; max-width: 45%; margin: 0.3rem 0 1rem 1.5rem; }
+figure.left { float: left; max-width: 45%; margin: 0.3rem 1.5rem 1rem 0; }
+figcaption { font-size: 0.88em; line-height: 1.4; margin-top: 0.5rem; color: var(--ink); }
+.content figcaption p { margin: 0; text-align: center; }
+.content::after { content: ""; display: block; clear: both; }
+@media (max-width: 34rem) { figure.right, figure.left { float: none; max-width: 100%; margin: 1.5rem auto; } }
+
+/* KaTeX scales math to 1.21em by default; with Latin Modern text the math fonts
+   (also Computer Modern) match at 1em. main.css loads after katex.css to win. */
+.katex { font-size: 1em; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.2rem 0; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); gap: 0.6rem; margin: 1.8rem 0; }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.video video { width: 100%; }
+.pdf object { width: 100%; height: 36rem; border: 1px solid var(--rule); }
+.content iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; margin: 1.5rem 0; }
+
+/* Archives, like a table of contents with dotted leaders */
+.toc-year { font-size: 1.2rem; margin: 2rem 0 0.6rem; }
+ul.archive { list-style: none; padding: 0; margin: 0; }
+ul.archive li { display: flex; align-items: baseline; gap: 0.4rem; margin: 0.3rem 0; }
+ul.archive li::after { content: none; }
+ul.archive .leader { flex: 1; border-bottom: 1px dotted var(--muted); transform: translateY(-0.3em); min-width: 1.5rem; }
+ul.archive time { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin: 3rem 0; font-style: italic; }
+.site-footer { text-align: center; border-top: 1px solid var(--rule); margin-top: 4rem; padding: 1.4rem 1rem 3rem; color: var(--muted); font-size: 0.9rem; }
+.site-footer a { color: var(--muted); }
