@@ -29,7 +29,7 @@ jobs:
       - id: pages
         uses: actions/configure-pages@v6
       - name: Build
-        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --gc --minify  # site address comes from baseURL in hugo.toml
       - uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
