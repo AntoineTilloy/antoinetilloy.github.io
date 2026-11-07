@@ -5,7 +5,39 @@ url: /research/talks/
 weight: 2
 ---
 
+## 2026
+
+***Relativistic continuous matrix product states*** -> [slides](/files/2026/slides_princeton_2026.pdf)\
+PCTS–Simons Collaboration workshop on Confinement and QCD Strings, Princeton, USA, November 3rd
+
+***AI and research: riding dragons*** -> [slides](/files/2026/slides_ihp_2026.pdf)\
+AI and the future of mathematics and physics, IHP, Paris, October 21st
+
+***AI and research: riding dragons*** -> [slides](/files/2026/slides_alice_bob_2026.pdf)\
+Alice & Bob, Paris, September 23rd
+
+***AI and research: riding dragons*** -> [slides](/files/2026/slides_mines_cas_2026.pdf)\
+Séminaire du Centre Automatique et Systèmes, Mines Paris – PSL, September 18th
+
+***Quelques réflexions d'un amateur sur l'utilisation de l'IA agentique en recherche*** -> [slides](/files/2026/slides_auray_2026.pdf)\
+Journées de prospective du LKB, Auray, France, June 24th
+
+***Hybrid quantum-classical theories of gravity*** -> [slides](/files/2026/slides_slovenia_2026.pdf)\
+New Directions in the Foundations of Physics, Lake Bohinj, Slovenia, May 28th–31st
+
+***From the quantum many-body problem, to quantum computers and tensor networks*** -> [slides](/files/2026/slides_orap_2026.pdf)\
+56th ORAP Forum, Paris, April 9th
+
+***Some progress on the variational method in quantum field theory*** -> [slides](/files/2026/slides_hdr_2026.pdf)\
+Habilitation à Diriger les Recherches defense, Paris, January 29th
+
+***When metaphysics matters: the example of quantum-classical dynamics*** -> [slides](/files/2026/slides_munich_2026.pdf)\
+The ontology of fields, LMU Munich, January 9th
+
 ## 2025
+
+***The general structure of quantum-classical dynamics*** -> [slides](/files/2025/slides_budapest_2025.pdf)\
+QW3 seminar, Budapest (remotely), October 6th
 
 ***L'ordinateur quantique : une perspective physique*** -> [slides](/wp-content/uploads/2025/10/slides_amicale_corps_des_mines_2025.pdf)\
 Séminaire de l'Amicale du Corps des Mines, Marcoussis, France, October 4th
