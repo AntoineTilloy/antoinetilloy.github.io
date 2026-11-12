@@ -17,4 +17,4 @@ Even before that, I did my PhD at *Ecole Normale Supérieure* in Paris under the
 
 ![capturedequation_mod](/files/capturedequation_transparent.png)
 
-All my publications can be found on [ArXiv](http://arxiv.org/find/grp_math,grp_physics/1/au:+tilloy/0/1/0/all/0/1), [Google Scholar](https://scholar.google.com/citations?user=isGoFyYAAAAJ&hl=fr) or [Researchgate](https://www.researchgate.net/profile/Antoine_Tilloy). You can reach me by email: antoine.tilloy (at) mines-paristech.fr or (at) gmail.com or (at) inria.fr or on Twitter [@AntoineTilloy](https://twitter.com/AntoineTilloy).
+All my publications can be found on [ArXiv](https://arxiv.org/a/tilloy_a_1.html), [Google Scholar](https://scholar.google.com/citations?user=isGoFyYAAAAJ&hl=fr) or [Researchgate](https://www.researchgate.net/profile/Antoine_Tilloy). You can reach me by email: antoine.tilloy (at) minesparis.psl.eu or (at) gmail.com or (at) inria.fr or on Twitter [@AntoineTilloy](https://twitter.com/AntoineTilloy).
