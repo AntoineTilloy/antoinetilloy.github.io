@@ -10,7 +10,7 @@ weight: 2
 ***Relativistic continuous matrix product states*** -> [slides](/files/2026/slides_princeton_2026.pdf)\
 PCTS–Simons Collaboration workshop on Confinement and QCD Strings, Princeton, USA, November 3rd
 
-***AI and research: riding dragons*** -> [slides](/files/2026/slides_ihp_2026.pdf)\
+***AI and research: riding dragons*** -> [slides](/files/2026/slides_ihp_2026.pdf) - [video](https://www.youtube.com/watch?v=vv2FbBZZ3BI)\
 AI and the future of mathematics and physics, IHP, Paris, October 21st
 
 ***AI and research: riding dragons*** -> [slides](/files/2026/slides_alice_bob_2026.pdf)\
