@@ -69,6 +69,8 @@ th, td { padding: 0.25rem 0.8rem; text-align: left; }
 .title-block h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
 .meta { font-style: italic; color: var(--muted); margin: 0; }
 .crumb { margin: 0 0 0.3rem; font-style: italic; }
+.title-note-ref { font-size: 0.55em; font-weight: normal; margin-left: 0.1em; }
+.title-note { font-size: 0.88em; border-top: 1px solid var(--rule); margin-top: 2.5rem; padding-top: 0.8rem; }
 .subpages { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1.6rem; margin-top: 0.8rem; }
 .subpages a { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78rem; }
 

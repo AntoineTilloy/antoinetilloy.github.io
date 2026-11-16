@@ -12,7 +12,8 @@
   <article{{ if .Params.french }} lang="fr"{{ end }}>
     <header class="title-block">
       {{ with $parent }}<p class="crumb"><a href="{{ .RelPermalink }}">{{ .Title }}</a> /</p>{{ end }}
-      <h1>{{ .Title }}</h1>
+      {{- /* Optional front matter "titlenote": a footnote attached to the title, shown after the content */}}
+      <h1>{{ .Title }}{{ with .Params.titlenote }}<sup class="title-note-ref"><a href="#title-note" id="title-note-ref" aria-label="Note on the title">*</a></sup>{{ end }}</h1>
       {{ if eq .Section "posts" }}{{ partial "date.html" . }}{{ end }}
       {{ with $children }}
       <nav class="subpages">
@@ -21,6 +22,7 @@
       {{ end }}
     </header>
     <div class="content">{{ .Content }}</div>
+    {{ with .Params.titlenote }}<p class="title-note" id="title-note"><a href="#title-note-ref">*</a> {{ $.RenderString . }}</p>{{ end }}
   </article>
   {{ if eq .Section "posts" }}
   <nav class="pager">
